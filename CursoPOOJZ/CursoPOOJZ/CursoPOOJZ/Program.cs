@@ -2,16 +2,14 @@
 
 Console.WriteLine("POO Concepts");
 Console.WriteLine("========");
-
-try
+Employee employee = new SalaryEmployee()
 {
-	Console.WriteLine(new Date(2024, 2, 29));
-	Console.WriteLine(new Date(1997, 9, 23));
-	Console.WriteLine(new Date(1900, 2, 7));
-	Console.WriteLine(new Date(1985, 11, 31));
-}
-catch (Exception ex)
-{
-
-    Console.WriteLine(ex.Message);
-}
+    Id = 1010,
+    FirstName = "Sandra",
+    LastName = "morales",
+    BirthDate = new Date(1990, 5, 23),
+    HiringDate = new Date(2022, 5, 13),
+    IsActive = true,
+    Salary=181543.45M
+};
+Console.WriteLine(employee);
